@@ -4,7 +4,7 @@ function Contact() {
   const education = [
     { year: '2010 - 2013', institution: 'MC High School', degree: 'Board of SSC Education', score: '4.8' },
     { year: '2013 - 2015', institution: 'P.N.R.E.S College', degree: 'Board of Intermediate Education', score: '7.9' },
-    { year: '2015 - 2018', institution: 'MNM Degree College', degree: 'Bachelor of Technology', score: '7.0' },
+    { year: '2015 - 2018', institution: 'MNM Degree College', degree: 'Bachelor of Commerce ', score: '7.0' },
   ];
 
   return (
@@ -14,7 +14,7 @@ function Contact() {
           <span className="bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
             Education & Contact
           </span>
-        </h2>
+        </h2> 
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           <div>
@@ -97,7 +97,7 @@ function Contact() {
 
         <div className="text-center pt-12 border-t border-gray-800">
           <p className="text-gray-400">
-            © 2024 Surendra Reddy Kandula. Built with React & Tailwind CSS.
+            © 2025 Surendra Reddy Kandula. Built with React & Tailwind CSS.
           </p>
         </div>
       </div>

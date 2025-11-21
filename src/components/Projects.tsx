@@ -85,6 +85,7 @@ const projects: Project[] = [
       'Developed WebSocket-based backend using Node.js',
       'Designed and implemented frontend using React.js',
       'Handled message delivery status, online indicators, and chat history',
+      'Implemented Excel data upload and download functionality for bulk data processing'
     ],
     tech: {
       frontend: 'React JS',
@@ -139,10 +140,10 @@ function Projects() {
                   {project.responsibilities.map((resp, idx) => (
                     <li key={idx} className="flex items-start gap-2 text-gray-300 text-sm">
                       <span className="text-cyan-400 mt-1">▹</span>
-                      <span>{resp}</span>
+                      <span className='mt-1'>{resp}</span>
                     </li>
                   ))}
-                </ul>
+                </ul>  
               </div>
 
               <div className="space-y-3">

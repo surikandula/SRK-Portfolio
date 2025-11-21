@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
-import { Mail, Linkedin, ChevronDown } from 'lucide-react';
+import { Mail, Linkedin, ChevronDown, Download } from 'lucide-react';
+import resumePdf from './Surendra Kandula Resume.pdf';
 
 function Hero() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -17,7 +18,7 @@ function Hero() {
     const particles: Array<{
       x: number;
       y: number;
-      vx: number;
+      vx: number; 
       vy: number;
       size: number;
     }> = [];
@@ -131,6 +132,15 @@ function Hero() {
           >
             <Linkedin size={20} />
             <span>LinkedIn</span>
+          </a>
+
+          <a
+            href={resumePdf}
+            download="Surendra Kandula Resume.pdf"
+            className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 text-white rounded-lg hover:shadow-lg hover:shadow-purple-500/40 transition-all duration-300"
+          >
+            <Download size={20} />
+            <span>Resume</span>
           </a>
         </div>
 
